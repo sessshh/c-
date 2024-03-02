@@ -8,17 +8,19 @@ namespace ConsoleApp1
 {
     internal class Program
     {
-        class People
-        {
-            int age;
-            int height;
-            string name;
-            string lastName;
-        }
 
         static void Main(string[] args)
         {
-            int a = 20;
+            Person p1 = new Person();
+            p1.SetName( "Вася");
+
+            Console.WriteLine( p1.GetName() );
+
+            Person p2 = new Person();
+            p2.SetName( "      ");
+
+            Console.WriteLine(p2.GetName());
+
             //Console.WriteLine("enter numb:");
             //string tmp = Console.ReadLine();
             //int b = int.Parse(tmp); //преобразование строки в число
@@ -45,9 +47,9 @@ namespace ConsoleApp1
             //MyFunction( a: 10, userName : "Вася");
             //MyFunction( 10, "Вася222");
         }
-        
-        
-        
+
+
+
         static void If5()
         {
             Console.WriteLine("Введите первое число: ");
